@@ -1,0 +1,120 @@
+#sky {
+    width: 100%;
+    background-color: @brand-primary;
+    height: @screen-lg-min / 2;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    @media (max-width: @screen-md-min) {
+      height: @screen-md-min / 2;
+    }
+    @media (max-width: @screen-sm-min) {
+      height: @screen-sm-min / 2;
+    }
+    @media (max-width: @screen-xs-min) {
+      height: @screen-xs-min / 2;
+
+    }
+    #greeting {
+      color: #fff;
+      font-family: Pacifico;
+      font-size: 100px;
+      position: fixed;
+      top: 420px;
+      width: 100%;
+      text-align: center;
+      @media (max-width: @screen-md-min) {
+        font-size: 85px;
+        top: 350px;
+      }
+      @media (max-width: @screen-sm-min) {
+        font-size: 75px;
+        top: 250px;
+      }
+      @media (max-width: @screen-xs-min) {
+        font-size: 50px;
+        top: 150px;
+      }
+    }
+    #sun-moon {
+      color: #fff;
+      width: @screen-lg-min * (11/12);
+      height: @screen-lg-min * (11/12);
+      display: none;
+      position: fixed;
+      top: @screen-lg-min / 24;
+      left: 50%;
+      margin-left: (-0.5) * (@screen-lg-min * (11/12));
+      @media (max-width: @screen-md-min) {
+        width: @screen-md-min * (11/12);
+        height: @screen-md-min * (11/12);
+        margin-left: (-0.5) * (@screen-md-min * (11/12));
+        top: @screen-md-min / 24;
+      }
+      @media (max-width: @screen-sm-min) {
+        width: @screen-sm-min * (11/12);
+        height: @screen-sm-min * (11/12);
+        margin-left: (-0.5) * (@screen-sm-min * (11/12));
+        top: @screen-sm-min / 24;
+      }
+      @media (max-width: @screen-xs-min) {
+        width: @screen-xs-min * (11/12);
+        height: @screen-xs-min * (11/12);
+        margin-left: (-0.5) * (@screen-xs-min * (11/12));
+        top: @screen-xs-min / 24;
+      }
+      .planet {
+        font-size: 150px;
+        position: absolute;
+        left: 50%;
+        margin-left: -75px;
+        @media (max-width: @screen-md-min) {
+          font-size: 120px;
+          margin-left: -60px;
+        }
+        @media (max-width: @screen-sm-min) {
+          font-size: 80px;
+          margin-left: -40px;
+        }
+        @media (max-width: @screen-xs-min) {
+          font-size: 40px;
+          margin-left: -20px;
+        }
+      }
+      #sun {
+        bottom: 0;
+      }
+      #moon {
+        top: 0;
+      }
+    }
+    .sky-feature {
+      color: #fff;
+      position: fixed;
+      display: none;
+      &.fa-star-o {
+        font-size: 30px;
+        @media (max-width: @screen-md-min) {
+          font-size: 25px;
+        }
+        @media (max-width: @screen-sm-min) {
+          font-size: 20px;
+        }
+        @media (max-width: @screen-xs-min) {
+          font-size: 15px;
+        }
+      }
+      &.fa-cloud {
+        font-size: 150px;
+        @media (max-width: @screen-md-min) {
+          font-size: 100px;
+        }
+        @media (max-width: @screen-sm-min) {
+          font-size: 50px;
+        }
+        @media (max-width: @screen-xs-min) {
+          font-size: 30px;
+        }
+      }
+    }
+  }
